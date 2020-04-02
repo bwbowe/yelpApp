@@ -1,11 +1,10 @@
-import SearchBar from "../components/SearchBar/SearchBar";
 
-const apiKey = '252zBbmltsQTE8a8PYYd2873fi4jrII56sgPdBDTZNEisKuWmhPw6jle2hSg7szX3fcUFjNewqb6rEKJAU4WdlXtW1zjQu5ZxrfgB2vApKzajZQ5qY-xrC3faX6CXnYx';
+
+const apiKey = 'HezxteVXXokFqDMD9Scpi_MYRzOxLyCkBt1j841ivRbP7IoU0VFc-UKEfsPuEerNNK8AA-GrXAFU0BBzUKLiowMX4eQ_w8pH9d0xR97ZxcUq0779KpFEi4g4ZkOFXnYx';
 
 const Yelp = {
     search (term, location, sortBy) {
-        return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?
-            term=${term}&location=${location}&sort_by=${sortBy}`, {
+        return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
                 headers: {
                     Authorization: `Bearer ${apiKey}`
                 }
